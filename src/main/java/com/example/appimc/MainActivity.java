@@ -31,13 +31,22 @@ public class MainActivity extends AppCompatActivity {
         buttonCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                resultado = (Calculos.classificaIMC(Double.parseDouble(editTextAltura.getText().toString()),
-                        Double.parseDouble(editTextPeso.getText().toString())));
-                Intent intent = new Intent(MainActivity.this, ActivityResultado.class);
-                intent.putExtra("imc", resultado);
-                intent.putExtra("nome", editTextNome.getText().toString());
-                startActivity(intent);
 
+                if (editTextNome.getText().toString().isEmpty()) {
+                    editTextNome.setError("Este campo é obrigatório");
+                } else if (editTextPeso.getText().toString().isEmpty()) {
+                    editTextPeso.setError("Este campo é obrigatório");
+                } else if (editTextAltura.getText().toString().isEmpty()) {
+                    editTextAltura.setError("Este campo é obrigatório");
+                } else {
+                    resultado = (Calculos.classificaIMC(Double.parseDouble(editTextAltura.getText().toString()),
+                            Double.parseDouble(editTextPeso.getText().toString())));
+                    Intent intent = new Intent(MainActivity.this, ActivityResultado.class);
+                    intent.putExtra("imc", resultado);
+                    intent.putExtra("nome", editTextNome.getText().toString());
+                    startActivity(intent);
+
+                }
             }
         });
 

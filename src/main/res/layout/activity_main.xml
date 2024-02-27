@@ -21,8 +21,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="digite o seu Nome:"
-        android:inputType="text" />
+        android:hint="@string/digite_o_seu_nome"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
 
     <EditText
         android:id="@+id/editTextPeso"
@@ -30,8 +32,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="digite o Peso:"
-        android:inputType="numberDecimal" />
+        android:hint="@string/digite_o_peso"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
 
     <EditText
         android:id="@+id/editTextAltura"
@@ -39,8 +43,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="digite a Altura:"
-        android:inputType="numberDecimal" />
+        android:hint="@string/digite_a_altura"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+         />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -56,14 +62,19 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Limpar" />
+                android:text="@string/limpar"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+
 
             <Button
                 android:id="@+id/buttonCalcular"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Calcular" />
+                android:text="@string/calcular"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
 
         </TableRow>
 
