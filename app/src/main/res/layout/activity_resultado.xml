@@ -11,23 +11,27 @@
         android:id="@+id/textViewPessoaNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
         android:gravity="center"
-        android:text="teste"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
 
     <TextView
         android:id="@+id/textViewResultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
         android:gravity="center"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
 
     <ImageView
         android:id="@+id/imageIMC"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
 
 
 </LinearLayout>
