@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppIMC</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+    <string name="digite_o_seu_nome">digite o seu Nome:</string>
+    <string name="digite_o_peso">digite o Peso:</string>
+    <string name="digite_a_altura">digite a Altura:</string>
+</resources>
