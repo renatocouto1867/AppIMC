@@ -12,7 +12,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
-        android:text="Calculadora de IMC"
+        android:text="@string/calculadora_de_imc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold" />
 
     <EditText
@@ -64,6 +65,7 @@
                 android:layout_weight="1"
                 android:text="@string/limpar"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginEnd="2dp"
                 />
 
 
@@ -74,6 +76,7 @@
                 android:layout_weight="1"
                 android:text="@string/calcular"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginStart="2dp"
                 />
 
         </TableRow>
